@@ -50,6 +50,7 @@ stages:
         displayName: 'Run a one-line script'
       - script: 
           echo this is script2.job2
+      - bash: echo $(Build.BuildId)
         displayName: 'ran the stage2.script2'
     
 - stage: stage3_deploy
@@ -61,5 +62,12 @@ stages:
       - script: 
           echo this is script2.stagedeploy.job1
         displayName: 'ran the stage3.script2'
+      - bash: echo $(Build.BuildNumber)
+      - bash: echo $(Build.BuildId)
+      - bash: echo $(Build.SourceBuildBranchName)
+      - bash: echo $(Build.SourceDirectory)
+      - bash: echo $(Build.DefaultWorkingDirectory)
+      - bash: ls -R $(Build.DefaultWorkingDirectory)
+      - bash: echo $(Build.ArtifactStagingDirectory)
   dependsOn: []
     
