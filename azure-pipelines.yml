@@ -13,7 +13,7 @@ variables:
   pathtoproj: myprj/p2/myprj.csproj
 
 stages:
-- stage: stage1 - build
+- stage: stage1_build
   jobs:
   - job: job1
     steps:
@@ -42,7 +42,7 @@ stages:
         echo See https://aka.ms/yaml
       displayName: 'Run a multi-line script'
 
-- stage: stage2 - test
+- stage: stage2_test
   jobs:
   - job: job1
     steps:
