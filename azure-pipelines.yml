@@ -12,7 +12,7 @@ trigger:
     - main
   paths:
     include:
-    - AspWebApi/AngularDemo  
+    - AngularDemo  
 
 
 pool:
