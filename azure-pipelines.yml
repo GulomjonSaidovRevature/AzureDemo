@@ -9,10 +9,10 @@ pr: none
 trigger:
   branches:
     include:
-    - main
+    - test
   paths:
     include:
-    - AngularDemo  
+    - AngularDemo
 
 
 pool:
