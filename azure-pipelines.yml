@@ -80,6 +80,6 @@ stages:
       - bash: echo $(Build.SourceDirectory)
       - bash: echo $(Build.DefaultWorkingDirectory)
       - bash: ls -R $(Build.DefaultWorkingDirectory)
-      - bash: echo $(Build.ArtifactStagingDirectory)
+      # - bash: echo $(Build.ArtifactStagingDirectory)
   dependsOn: []
     
